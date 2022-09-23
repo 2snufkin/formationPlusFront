@@ -1,0 +1,12 @@
+<h4>Etudiants</h4>
+<select name="cars"  #mySelect
+        (change)='onOptionsSelected(mySelect.value)' >
+  <option value="volvo"  *ngFor="let etudiant of etudiants$" [value]="etudiant.id">
+    {{etudiant.nom}} {{etudiant.prenom}}</option>
+</select>
+
+<mark *ngIf="current">Nom convention: {{current.convection.nom}}</mark>
+
+<textarea *ngIf="current"  name="w3review" rows="4" cols="50">
+{{text}}
+</textarea>

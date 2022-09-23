@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learn';
+  numberO: string = ''
+
+  public assignNumber($event: string){
+    this.numberO = $event
+    console.log($event);
+
+
+  }
 }
